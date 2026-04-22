@@ -1,5 +1,6 @@
 #  Expense Tracker (Full Stack Application)
-
+###  Backend
+<img width="1400" height="897" alt="Screenshot (44)" src="https://github.com/user-attachments/assets/1831e763-217b-4c56-8687-1a83de5b5335" />
 A full-stack Expense Tracker application built using **Spring Boot, React (Vite), and PostgreSQL**.
 It allows users to add, view, filter, and manage daily expenses with a clean and responsive UI.
 
@@ -21,7 +22,7 @@ It allows users to add, view, filter, and manage daily expenses with a clean and
 * CSS (custom styling)
 * Fetch API
 
-###  Backend
+
 
 * Spring Boot
 * Spring Data JPA
