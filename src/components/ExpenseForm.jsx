@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const today = () => new Date().toISOString().split("T")[0];
-
+const API = "http://localhost:8080";
 const CATEGORIES = [
   "Food & Dining",
   "Transport",
@@ -56,7 +56,7 @@ export default function ExpenseForm({ onCreated }) {
 
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:8080/expenses", {
+      const res = await fetch(`${API}/expenses`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -138,7 +138,6 @@ export default function ExpenseForm({ onCreated }) {
           </div>
         </div>
 
-        {/* Category */}
         <div style={styles.field}>
           <label style={styles.label}>Category</label>
           <select
